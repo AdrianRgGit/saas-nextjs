@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${arimo.className} flex h-[95vh] gap-x-12 p-4`}>
+      <body className={`${arimo.className} flex h-screen bg-purple-1 p-6 gap-x-10`}>
         <SideNav />
         {children}
       </body>
