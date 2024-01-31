@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export interface NavItemType {
+export interface NavItemProps {
   href: string;
-  icon: ReactNode;
+  children: ReactNode;
 }

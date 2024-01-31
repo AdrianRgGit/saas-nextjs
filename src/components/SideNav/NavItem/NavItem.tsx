@@ -1,12 +1,9 @@
-import { NavItemType } from "@/types/types";
+import { NavItemProps } from "@/types/types";
 
-const NavItem = ({ children }: { children: NavItemType }) => {
-  const { href, icon } = children;
+const NavItem = ({ href, children }: NavItemProps) => {
   return (
     <li>
-      <a href={href}>
-        {icon}
-      </a>
+      <a href={href}>{children}</a>
     </li>
   );
 };

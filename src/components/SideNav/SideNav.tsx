@@ -1,51 +1,44 @@
-import { Grip } from "lucide-react";
+import {
+  BarChart,
+  Grip,
+  Lightbulb,
+  LogOut,
+  Settings,
+  UsersIcon,
+} from "lucide-react";
 import React from "react";
 import NavItem from "./NavItem/NavItem";
-import Avatar from "./Avatar/Avatar";
+import Avatar from "./AvatarImage/AvatarImage";
 
 const SideNav = () => {
   return (
-    <nav className="flex w-32 flex-col justify-between rounded-xl bg-purple-3 p-4 text-white-1">
+    <nav className="flex w-32 flex-col items-center justify-between rounded-xl bg-purple-3 p-4 text-white-1">
       <img src="/images/logo.jpg" alt="logo" />
-      <ul className="flex flex-col items-center justify-center gap-y-12">
-        <NavItem>
-          {{
-            href: "#",
-            icon: <Grip />,
-          }}
+      <ul className="flex flex-col justify-center gap-y-12">
+        <NavItem href="#">
+          <Grip />
         </NavItem>
 
-        <NavItem>
-          {{
-            href: "#",
-            icon: <Grip />,
-          }}
+        <NavItem href="#">
+          <UsersIcon />
         </NavItem>
 
-        <NavItem>
-          {{
-            href: "#",
-            icon: <Grip />,
-          }}
+        <NavItem href="#">
+          <BarChart />
         </NavItem>
 
-        <NavItem>
-          {{
-            href: "#",
-            icon: <Grip />,
-          }}
+        <NavItem href="#">
+          <Settings />
         </NavItem>
 
-        <NavItem>
-          {{
-            href: "#",
-            icon: <Grip />,
-          }}
+        <NavItem href="#">
+          <Lightbulb />
         </NavItem>
       </ul>
 
-      <footer>
+      <footer className="flex flex-col items-center gap-y-4">
         <Avatar />
+        <LogOut />
       </footer>
     </nav>
   );
