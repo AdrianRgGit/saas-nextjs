@@ -6,13 +6,13 @@ import Summary from "@/components/Summary/Summary";
 
 export default function Home() {
   return (
-    <main className="flex-1 flex gap-x-10">
+    <main className="flex flex-1 gap-x-10">
       <div className="flex-1">
         <Summary />
         <Breakdown />
         <History />
       </div>
-      <div>
+      <div className="bg-purple-2 rounded-xl p-6">
         <Portfolio />
         <Categories />
       </div>

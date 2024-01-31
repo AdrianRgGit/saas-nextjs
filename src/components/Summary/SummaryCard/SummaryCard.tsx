@@ -1,6 +1,6 @@
 import { Database } from "lucide-react";
 import React from "react";
-import TrendLabel from "./TrendLabel/TrendLabel";
+import TrendLabel from "../../Comun/TrendLabel/TrendLabel";
 
 const SummaryCard = () => {
   return (
