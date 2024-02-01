@@ -12,3 +12,10 @@ export interface PersonCardProps {
   username: string;
   number: string;
 }
+
+// NOTE: SUMMARY BUTTON PROPS
+export interface SummaryButtonProps {
+  bgColor: string;
+  textColor: string;
+  children: ReactNode;
+}
