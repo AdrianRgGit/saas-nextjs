@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Categories/CategoriesChart/CategoriesChart.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Categories/CategoriesChart/CategoriesChart.jsx", "src/components/Breakdown/Breakdown.tsx"],
   "exclude": ["node_modules"]
 }

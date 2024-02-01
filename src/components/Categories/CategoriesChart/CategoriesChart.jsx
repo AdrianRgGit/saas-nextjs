@@ -14,21 +14,27 @@ function CategoriesChart() {
       myChart = new Chart(ctx, {
         type: "doughnut",
         data: {
-          labels: ["Accepted", "Pending", "Rejected"],
+          labels: ["Accepted", "Pending", "Rejected", "Retail"],
           datasets: [
             {
-              data: [50, 20, 10, 20],
+              data: [
+                Math.floor(Math.random() * 100),
+                Math.floor(Math.random() * 100),
+                Math.floor(Math.random() * 100),
+                Math.floor(Math.random() * 100),
+              ],
+
               borderColor: [
                 "rgb(75, 192, 192)",
                 "rgb(255, 205, 86)",
                 "rgb(255, 99, 132)",
-                "rgb(133,155,132)",
+                "rgb(43,220,232)",
               ],
               backgroundColor: [
                 "rgb(75, 192, 192 )",
                 "rgb(255, 205, 86)",
                 "rgb(255, 99, 132)",
-                "rgb(133,155,132)",
+                "rgb(43,220,232)",
               ],
               borderWidth: 2,
             },

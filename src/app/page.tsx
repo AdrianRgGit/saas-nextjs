@@ -7,7 +7,7 @@ import Summary from "@/components/Summary/Summary";
 export default function Home() {
   return (
     <main className="flex flex-1 gap-x-10">
-      <div className="flex-1">
+      <div className="flex-1 flex flex-col gap-y-12">
         <Summary />
         <Breakdown />
         <History />
