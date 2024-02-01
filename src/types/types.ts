@@ -19,3 +19,14 @@ export interface SummaryButtonProps {
   textColor: string;
   children: ReactNode;
 }
+
+// NOTE: SUMMARY CARD PROPS
+
+export interface SummaryCardProps {
+  title: string;
+  number: string;
+  bgColor: string;
+  textColor: string;
+  icon: ReactNode;
+  label: ReactNode;
+}

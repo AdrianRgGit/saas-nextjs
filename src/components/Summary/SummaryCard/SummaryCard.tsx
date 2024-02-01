@@ -1,18 +1,27 @@
-import { Database } from "lucide-react";
 import React from "react";
 import TrendLabel from "../../Comun/TrendLabel/TrendLabel";
+import { SummaryCardProps } from "@/types/types";
 
-const SummaryCard = () => {
+const SummaryCard = ({
+  title,
+  number,
+  bgColor,
+  textColor,
+  icon,
+  label,
+}: SummaryCardProps) => {
   return (
-    <div className="flex h-28 flex-1 flex-col justify-between rounded-xl bg-orange-1 p-4">
+    <div
+      className={`flex h-28 flex-1 flex-col justify-between rounded-xl p-4 ${bgColor}`}
+    >
       <div className="flex justify-between">
-        <p>Signals</p>
-        <Database fill="rgb(254 135 81)" />
+        <p>{title}</p>
+        <span className={`${textColor}`}>{icon}</span>
       </div>
 
       <div className="flex items-center justify-between">
-        <p className="text-4xl font-bold">257</p>
-        <TrendLabel />
+        <p className="text-4xl font-bold">{number}</p>
+        {label}
       </div>
     </div>
   );
