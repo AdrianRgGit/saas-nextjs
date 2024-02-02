@@ -39,7 +39,9 @@ const SideNav = () => {
 
       <footer className="flex flex-col items-center gap-y-4">
         <Avatar />
-        <LogOut />
+        <button className="transition duration-200 hover:text-purple-3">
+          <LogOut />
+        </button>
       </footer>
     </nav>
   );

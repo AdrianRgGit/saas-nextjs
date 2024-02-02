@@ -4,7 +4,6 @@ import Categories from "@/components/Categories/Categories";
 import History from "@/components/History/History";
 import Portfolio from "@/components/Portfolio/Portfolio";
 import Summary from "@/components/Summary/Summary";
-import { useUserData } from "@/store/userStore";
 
 export default function Home() {
   return (
@@ -12,7 +11,7 @@ export default function Home() {
       <div className="flex flex-1 flex-col gap-y-12">
         <Summary />
         <Breakdown />
-        <History />
+        {/* <History /> */}
       </div>
       <div className="rounded-xl bg-purple-2 p-6">
         <Portfolio />
