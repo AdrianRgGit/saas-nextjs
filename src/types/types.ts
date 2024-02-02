@@ -30,3 +30,13 @@ export interface SummaryCardProps {
   icon: ReactNode;
   label: ReactNode;
 }
+
+// NOTE: DATA USER
+export interface Data {
+  bills: number;
+  capital: number;
+  monthly_expenses: number[];
+  name: string;
+  number: string;
+  avatar: string;
+}

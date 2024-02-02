@@ -1,0 +1,102 @@
+[
+  {
+    "bills": 1500,
+    "capital": 50000,
+    "monthly_expenses": [
+      1200, 1500, 1000, 2000, 800, 1200, 900, 1800, 1600, 1300, 1100, 1400
+    ],
+    "name": "Adrián",
+    "number": "#1234",
+    "avatar": "https://picsum.photos/200/200"
+  },
+  {
+    "bills": 1200,
+    "capital": 60000,
+    "monthly_expenses": [
+      1000, 1400, 800, 1800, 900, 1300, 1100, 2000, 1500, 1200, 1600, 1700
+    ],
+    "name": "María",
+    "number": "#5678",
+    "avatar": "https://picsum.photos/200/201"
+  },
+  {
+    "bills": 1800,
+    "capital": 45000,
+    "monthly_expenses": [
+      1300, 1100, 1600, 900, 1200, 1000, 1500, 2000, 1400, 800, 1700, 1900
+    ],
+    "name": "Carlos",
+    "number": "#9012",
+    "avatar": "https://picsum.photos/200/202"
+  },
+  {
+    "bills": 1400,
+    "capital": 70000,
+    "monthly_expenses": [
+      1600, 1700, 1200, 1400, 1100, 1500, 1000, 1900, 1300, 800, 2000, 1800
+    ],
+    "name": "Laura",
+    "number": "#3456",
+    "avatar": "https://picsum.photos/200/203"
+  },
+  {
+    "bills": 1600,
+    "capital": 55000,
+    "monthly_expenses": [
+      1500, 1200, 1800, 1000, 1300, 1400, 900, 1700, 1100, 1600, 1900, 2000
+    ],
+    "name": "Alejandro",
+    "number": "#7890",
+    "avatar": "https://picsum.photos/200/204"
+  },
+  {
+    "bills": 1300,
+    "capital": 65000,
+    "monthly_expenses": [
+      1400, 1800, 1100, 1900, 1200, 1600, 1000, 2000, 1500, 1300, 900, 1700
+    ],
+    "name": "Isabel",
+    "number": "#2345",
+    "avatar": "https://picsum.photos/200/205"
+  },
+  {
+    "bills": 1700,
+    "capital": 50000,
+    "monthly_expenses": [
+      1100, 1600, 1300, 1000, 1800, 900, 1500, 1700, 1400, 1200, 1900, 2000
+    ],
+    "name": "Javier",
+    "number": "#6789",
+    "avatar": "https://picsum.photos/200/206"
+  },
+  {
+    "bills": 1500,
+    "capital": 60000,
+    "monthly_expenses": [
+      1200, 1500, 1000, 2000, 800, 1200, 900, 1800, 1600, 1300, 1100, 1400
+    ],
+    "name": "Sofía",
+    "number": "#0123",
+    "avatar": "https://picsum.photos/200/207"
+  },
+  {
+    "bills": 1400,
+    "capital": 70000,
+    "monthly_expenses": [
+      1600, 1700, 1200, 1400, 1100, 1500, 1000, 1900, 1300, 800, 2000, 1800
+    ],
+    "name": "David",
+    "number": "#4567",
+    "avatar": "https://picsum.photos/200/208"
+  },
+  {
+    "bills": 1600,
+    "capital": 55000,
+    "monthly_expenses": [
+      1500, 1200, 1800, 1000, 1300, 1400, 900, 1700, 1100, 1600, 1900, 2000
+    ],
+    "name": "Ana",
+    "number": "#8901",
+    "avatar": "https://picsum.photos/200/209"
+  }
+]
