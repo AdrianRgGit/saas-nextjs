@@ -1,13 +1,12 @@
+import { useUserData } from "@/store/userStore";
 import { Avatar } from "@nextui-org/react";
 import React from "react";
 
 const AvatarImage = () => {
+  const avatar = useUserData((state) => state.avatar);
   return (
     <div className="flex items-center gap-3">
-      <Avatar
-        src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-        className="h-12 w-12"
-      />
+      <Avatar src={avatar} className="h-12 w-12" />
     </div>
   );
 };

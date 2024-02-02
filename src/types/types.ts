@@ -24,7 +24,7 @@ export interface SummaryButtonProps {
 
 export interface SummaryCardProps {
   title: string;
-  number: string;
+  number: number;
   bgColor: string;
   textColor: string;
   icon: ReactNode;
@@ -32,7 +32,7 @@ export interface SummaryCardProps {
 }
 
 // NOTE: DATA USER
-export interface Data {
+export interface UserData {
   bills: number;
   capital: number;
   monthly_expenses: number[];

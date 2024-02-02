@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   BarChart,
   Grip,
@@ -10,16 +10,8 @@ import {
 import React from "react";
 import NavItem from "./NavItem/NavItem";
 import Avatar from "./AvatarImage/AvatarImage";
-import { useFetchData } from "@/hooks/useFetchUserData";
-import { Spinner } from "@nextui-org/react";
 
 const SideNav = () => {
-  const data = useFetchData();
-
-  if (!data) {
-    return <Spinner />;
-  }
-
   return (
     <nav className="flex w-32 flex-col items-center justify-between rounded-xl bg-purple-4 p-4 text-white-1">
       <img src="/images/logo.jpg" alt="logo" />

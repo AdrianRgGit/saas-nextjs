@@ -4,15 +4,17 @@ import Categories from "@/components/Categories/Categories";
 import History from "@/components/History/History";
 import Portfolio from "@/components/Portfolio/Portfolio";
 import Summary from "@/components/Summary/Summary";
-import { useFetchData } from "@/hooks/useFetchUserData";
-import { Spinner } from "@nextui-org/react";
+import { useUserData } from "@/store/userStore";
 
 export default function Home() {
-  const data = useFetchData();
+  const bills = useUserData((state) => state.bills);
 
-  if (!data) {
-    return <Spinner />;
-  }
+  console.log(bills);
+  // const data = useFetchData();
+
+  // if (!data) {
+  //   return <Spinner />;
+  // }
 
   return (
     <main className="flex flex-1 gap-x-10">

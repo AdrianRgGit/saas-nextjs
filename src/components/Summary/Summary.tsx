@@ -1,10 +1,16 @@
-import { Bell, Plus, Database, Star } from "lucide-react";
+import { Bell, Plus, Database, Star, DollarSign } from "lucide-react";
 import React from "react";
 import SummaryCard from "./SummaryCard/SummaryCard";
 import SummaryButton from "./SummaryButton/SummaryButton";
 import TrendLabel from "../Comun/TrendLabel/TrendLabel";
+import { useUserData } from "@/store/userStore";
 
 const Summary = () => {
+  const bills = useUserData((state) => state.bills);
+  const capital = useUserData((state) => state.capital);
+
+  const avaiableBalance = capital - bills;
+
   return (
     <section className="flex flex-col gap-y-10">
       <article className="flex items-center justify-between">
@@ -23,7 +29,7 @@ const Summary = () => {
       <article className="flex justify-between gap-x-12">
         <SummaryCard
           title="Signals"
-          number="257"
+          number={bills}
           bgColor="bg-orange-1"
           textColor="text-orange-2"
           icon={<Database />}
@@ -31,7 +37,7 @@ const Summary = () => {
         />
         <SummaryCard
           title="Capital"
-          number="$7,850"
+          number={capital}
           bgColor="bg-green-1"
           textColor="text-green-2"
           icon={<Star />}
@@ -39,10 +45,10 @@ const Summary = () => {
         />
         <SummaryCard
           title="Avaiable Balance"
-          number="$675"
+          number={avaiableBalance}
           bgColor="bg-purple-2"
           textColor="text-purple-3"
-          icon={<Database />}
+          icon={<DollarSign />}
           label={<TrendLabel />}
         />
       </article>

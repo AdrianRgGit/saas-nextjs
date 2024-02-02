@@ -1,10 +1,12 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { Chart, registerables } from "chart.js";
+import { useUserData } from "@/store/userStore";
 
 Chart.register(...registerables);
 
 function Breakdown() {
+  const monthly_expenses = useUserData((state) => state.monthly_expenses);
   const chartRef = useRef(null);
   let myChart = null;
 
@@ -30,20 +32,7 @@ function Breakdown() {
           ],
           datasets: [
             {
-              data: [
-                Math.floor(Math.random() * 100),
-                Math.floor(Math.random() * 100),
-                Math.floor(Math.random() * 100),
-                Math.floor(Math.random() * 100),
-                Math.floor(Math.random() * 100),
-                Math.floor(Math.random() * 100),
-                Math.floor(Math.random() * 100),
-                Math.floor(Math.random() * 100),
-                Math.floor(Math.random() * 100),
-                Math.floor(Math.random() * 100),
-                Math.floor(Math.random() * 100),
-                Math.floor(Math.random() * 100),
-              ],
+              data: monthly_expenses,
 
               borderColor: ["#7723FE"],
               backgroundColor: ["#7723FE"],

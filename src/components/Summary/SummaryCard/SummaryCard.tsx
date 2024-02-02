@@ -1,5 +1,4 @@
 import React from "react";
-import TrendLabel from "../../Comun/TrendLabel/TrendLabel";
 import { SummaryCardProps } from "@/types/types";
 
 const SummaryCard = ({
@@ -20,7 +19,7 @@ const SummaryCard = ({
       </div>
 
       <div className="flex items-center justify-between">
-        <p className="text-4xl font-bold">{number}</p>
+        <p className="text-4xl font-bold">${number}</p>
         {label}
       </div>
     </div>
