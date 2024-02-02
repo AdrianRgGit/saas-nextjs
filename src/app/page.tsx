@@ -7,15 +7,6 @@ import Summary from "@/components/Summary/Summary";
 import { useUserData } from "@/store/userStore";
 
 export default function Home() {
-  const bills = useUserData((state) => state.bills);
-
-  console.log(bills);
-  // const data = useFetchData();
-
-  // if (!data) {
-  //   return <Spinner />;
-  // }
-
   return (
     <main className="flex flex-1 gap-x-10">
       <div className="flex flex-1 flex-col gap-y-12">
