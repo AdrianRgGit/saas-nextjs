@@ -32,8 +32,8 @@ function Breakdown() {
           ],
           datasets: [
             {
+              label: "Expenses",
               data: monthly_expenses,
-
               borderColor: ["#7723FE"],
               backgroundColor: ["#7723FE"],
               borderWidth: 2,
@@ -72,8 +72,8 @@ function Breakdown() {
 
   return (
     <>
-      <div className="flex w-full flex-col items-center bg-purple-2 p-2 rounded">
-        <h2 className="self-start text-2xl ml-2 mt-2">Breakdown</h2>
+      <div className="flex w-full flex-col items-center rounded bg-purple-2 p-2">
+        <h2 className="ml-2 mt-2 self-start text-2xl">Breakdown</h2>
         <canvas className="max-h-72" ref={chartRef}></canvas>
       </div>
     </>
