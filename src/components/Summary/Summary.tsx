@@ -33,7 +33,6 @@ const Summary = () => {
           bgColor="bg-orange-1"
           textColor="text-orange-2"
           icon={<Database />}
-          label={<TrendLabel />}
         />
         <SummaryCard
           title="Capital"
@@ -41,7 +40,6 @@ const Summary = () => {
           bgColor="bg-green-1"
           textColor="text-green-2"
           icon={<Star />}
-          label={<TrendLabel />}
         />
         <SummaryCard
           title="Avaiable Balance"

@@ -28,7 +28,7 @@ export interface SummaryCardProps {
   bgColor: string;
   textColor: string;
   icon: ReactNode;
-  label: ReactNode;
+  label?: ReactNode;
 }
 
 // NOTE: DATA USER
